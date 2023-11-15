@@ -1,0 +1,13 @@
+<div class="alert alert-danger" role="alert">
+  <h4>Confirma Eliminacion</h4>
+  <p>
+    Vas a eliminar el Curso
+  </p>
+  <p class="fw-bold">{{curso.nombre}}</p>
+  <div class="d-grid gap-2">
+    <button type="button" name="" id="" class="btn btn-danger" (click)="onEliminar()">Confirmar</button>
+  </div>
+</div>
+<div *ngIf="loading" class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+</div>

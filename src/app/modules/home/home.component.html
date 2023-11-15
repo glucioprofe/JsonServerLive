@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-3">
+    <!-- Some borders are removed -->
+    <app-menu></app-menu>
+
+  </div>
+  <div class="col-9">
+    <!-- Some borders are removed -->
+    <a class="btn btn-primary"  [routerLink]="['curso/agregar']" role="button">Agregar</a>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let item of cursos" class="list-group-item">
+        <div class="d-flex">
+          <div class="flex-fill ms-3">
+            {{item.nombre}}
+          </div>
+          <div class="flex-fill ms-3">
+            <a [routerLink]="['curso/editar', item.id]">Editar</a>
+          </div>
+          <div class="flex-fill ms-3">
+            <a [routerLink]="['curso/eliminar', item.id]">Borrar</a>
+          </div>
+        </div>
+
+
+      </li>
+    </ul>
+  </div>
+</div>

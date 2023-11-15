@@ -1,0 +1,22 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "nombre": "IS09-Seminario"
+    },
+    {
+      "nombre": "IS05-Discretas",
+      "id": 5
+    }
+  ],
+  "carajos": [
+    {
+      "nombre": "carajo1",
+      "id": 1
+    },
+    {
+      "nombre": "carajo",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <form>
+      <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input [(ngModel)]="nombre" type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" aria-describedby="helpId">
+      </div>
+      <div class="d-grid gap-2">
+        <button type="button" [disabled]="!nombre" class="btn btn-success" (click)="onSave()">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
